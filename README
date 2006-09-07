@@ -1,21 +1,18 @@
 Apache2-Mogile-Dispatch
 
-Apache 2.x is an excellent platform for serving content, namely dynamic
-content. Serving static content can become a gruesome task as your content
-bank becomes bigger and more diverse. Thankfully we have distributed file
-systems like MogileFS to easily distribute content efficiently while having
-good and controllable redundancy.
+Apache2::Mogile::Dispatch is an apache 2.x mod_perl module that makes it easy
+to dispatch incoming requests between mogile storage nodes and regular web
+servers. Consider it like a fancy pure perl mod_rewrite replacement that can
+intelligently reproxy requests.
 
-Because really, who doesn't want redundancy?
+This is ideal for websites that server a sizable amount of static content and
+would like to transition to mogileFS.
 
-This module also makes it easy* to migrate to MogileFS by calling a 'director'
-with a few options and having it return a set of rules for
-Apache2::Mogile::Dispatcher to follow. Currently the rules are based on the
-hostname of the requested URI but could easily be modified to be based on
-location specific rules.
-
-To speed things up as much as possible this module makes use of
-Cache::Memcached to cache as much of the decision information as possible.
+The goal of this module is to be as small and simple as possible but flexible
+enough for large websites to run efficiently and effectively. This module is
+meant to up sub-classed and the default configuration will more than likely
+NOT work. Please see the section on subclassing for more information. The test
+suite also includes several example subclasses ranging from simple to complex.
 
 INSTALLATION
 

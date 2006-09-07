@@ -1,27 +1,8 @@
----
+--- #YAML:1.0
 name: Apache2-Mogile-Dispatch
-version: 0.1_1
+version: 0.2
 author:
-  - 'Nick Gerakines <nick@socklabs.com>'
+  - Nick Gerakines <nick@socklabs.com>
 abstract: An Apache2 MogileFS Dispatcher
 license: perl
-resources:
-  license: http://dev.perl.org/licenses/
-requires:
-  Cache::Memcached: 0
-  English: 0
-  LWP::UserAgent: 0
-  MogileFS: 0
-build_requires:
-  Apache::Test: 0
-  Test::Group: 0
-  Test::More: 0
-  YAML::Syck: 0
-provides:
-  Apache2::Mogile::Dispatch:
-    file: lib/Apache2/Mogile/Dispatch.pm
-    version: 0.1_1
-generated_by: Module::Build version 0.28
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+generated_by: Module::Build version 0.2612, without YAML.pm
