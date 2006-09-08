@@ -23,7 +23,7 @@ use Apache2::Const -compile => qw(DECLINED OK DONE NOT_FOUND);
 
 use MogileFS;
 
-our $VERSION = '0.2';
+our $VERSION = '0.2.1';
 
 sub handler {
     my ($r) = @_;
@@ -230,10 +230,6 @@ debugging your subclass.
 When supplied with a list of mogile or static servers it will attempt to
 make a HEAD request to determine if the server can serve the file or not.
 
-=head1 AUTHOR
-
-Nick Gerakines, C<< <nick at socklabs.com> >>
-
 =head1 BUGS
 
 Please report any bugs or feature requests to
@@ -302,11 +298,18 @@ Mark Smith requested this module and gave the first requirements. Should also
 quickly thank everyone who worked on MogileFS, Perlbal and Memcache for making
 a product worth using. Cheers.
 
-=head1 COPYRIGHT & LICENSE
+=head1 AUTHOR
 
-Copyright 2006 Nick Gerakines, all rights reserved.
+Nick Gerakines, C<< <nick at gerakines.net> >>
 
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
+=head1 LICENSE
+
+I<Apache2::Mogile::Dispatch> is free software; you may redistribute it and/or
+modify it under the same terms as Perl itself.
+
+=head1 AUTHOR & COPYRIGHT
+
+Except where otherwise noted, I<Apache2::Mogile::Dispatch> is Copyright 2006
+Six Apart, cpan@sixapart.com. All rights reserved.
 
 =cut

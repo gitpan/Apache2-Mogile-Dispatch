@@ -44,9 +44,22 @@ You can also look for information at:
     CPAN Ratings:
         http://cpanratings.perl.org/d/Apache2-Mogile-Dispatch
 
-COPYRIGHT AND LICENCE
+ACKNOWLEDGEMENTS
 
-Copyright (C) 2006 Nick Gerakines
+Mark Smith requested this module and gave the first requirements. Should also
+quickly thank everyone who worked on MogileFS, Perlbal and Memcache for making
+a product worth using. Cheers.
 
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
+AUTHOR
+
+Nick Gerakines, <nick at gerakines.net>
+
+LICENSE
+
+Apache2::Mogile::Dispatch is free software; you may redistribute it and/or
+modify it under the same terms as Perl itself.
+
+AUTHOR & COPYRIGHT
+
+Except where otherwise noted, I<Apache2::Mogile::Dispatch> is Copyright 2006
+Six Apart, cpan@sixapart.com. All rights reserved.
